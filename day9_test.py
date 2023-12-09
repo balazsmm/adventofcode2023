@@ -20,8 +20,7 @@ class OasisTestCase(unittest.TestCase):
 		self.assertEqual([dfx_stack(line) for line in extrapolates(process_data(testdata))], [18, 28, 68])
 		self.assertEqual(sum_of_extrapolates(day9.process_data(testdata)), 114)
 		self.assertEqual(sum_of_extrapolates(day9.process_data(testdata), historic=True), 2)
-	# for dataline in day9.process_data(testdata):
-	# 	dfx_stack(dataline)
+
 
 
 if __name__ == '__main__':
